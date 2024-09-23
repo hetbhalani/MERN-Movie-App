@@ -6,9 +6,7 @@ function Layout() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid d-flex justify-content-between align-items-center">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <img src="/imgs/logo.jpg" style={{width: '100px'}}/>
 
           
           <div className="flex-grow-1 text-center">

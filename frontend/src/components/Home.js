@@ -131,7 +131,18 @@ function Home() {
           <div className="col-2 m-3"><img src='/imgs/ds-card.jpeg' style={{maxWidth: '250px'}}/></div>
           <div className="col-2 m-3"><img src='/imgs/br-card.jpg' style={{maxWidth: '250px'}}/></div>
           <div className="col-2 m-3"><img src='/imgs/end.jpg' style={{maxWidth: '250px'}}/></div>
+        </div>
+      </div>
 
+      <div className="m-4"><h4>Top Rated TV Shows</h4></div>
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-2 m-3"><img src='/imgs/tb-card.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 m-3"><img src='/imgs/mh-card.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 m-3"><img src='/imgs/bb-card.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 m-3"><img src='/imgs/loki.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 m-3"><img src='/imgs/mn-card.jpg' style={{maxWidth: '250px'}}/></div>
         </div>
       </div>
     </>
