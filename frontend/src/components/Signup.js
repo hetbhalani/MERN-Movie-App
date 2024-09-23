@@ -14,7 +14,6 @@ function Signup() {
         email,
         password
       });
-      // Optionally, you could add a success message or redirect here
     } catch (error) {
       console.log(error);
     }
@@ -23,8 +22,8 @@ function Signup() {
   return (
     <div className='container mt-5'>
       <h1 className='text-center'>Sign Up</h1>
-      <form onSubmit={submit} className='bg-light p-4 rounded shadow'>
-        <div className='mb-3'>
+      <form onSubmit={submit} className='bg-light p-4 rounded shadow mx-auto' style={{ maxWidth: '400px', minHeight: '340px'  }}>
+        <div className='mb-4'>
           <label htmlFor='email' className='form-label'>Email</label>
           <input
             type='email'
@@ -35,7 +34,7 @@ function Signup() {
             required
           />
         </div>
-        <div className='mb-3'>
+        <div className='mb-5'>
           <label htmlFor='password' className='form-label'>Password</label>
           <input
             type='password'
@@ -49,15 +48,11 @@ function Signup() {
         <button type='submit' className='btn btn-primary w-100'>
           Sign Up
         </button>
+
+        <div className='mt-4 float-start'>Already have an account?<Link className='ms-1' to='/login'>Login</Link></div>
       </form>
 
-      <hr className='my-4' />
-      <p className='text-center'>OR</p>
-      <div className='text-center'>
-        <Link to='/login' className='btn btn-link'>
-          Log In
-        </Link>
-      </div>
+      
     </div>
   );
 }
