@@ -121,6 +121,19 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+
+      <div className="m-4"><h4>Top Rated Movies </h4></div>
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-2 m-3"><img src='/imgs/batman-card.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 m-3"><img src='/imgs/int-card.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 m-3"><img src='/imgs/ds-card.jpeg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 m-3"><img src='/imgs/br-card.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 m-3"><img src='/imgs/end.jpg' style={{maxWidth: '250px'}}/></div>
+
+        </div>
+      </div>
     </>
   );
 }
