@@ -1,9 +1,10 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
 
 function Home() {
   return (
     <>
-      <div id="carouselExampleIndicators" className="carousel slide">
+      {/* <div id="carouselExampleIndicators" className="carousel slide">
         <div className="carousel-indicators">
           <button
             type="button"
@@ -86,7 +87,40 @@ function Home() {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
+
+      <Carousel className="mt-3">
+        <Carousel.Item>
+          <img className="d-block w-100" src="/imgs/dark-banner.jpg" style={{maxHeight: '520px'}}/>
+          <Carousel.Caption>
+            <h3>Dark</h3>
+            <p>Best Time Traveling Series</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src="/imgs/avg-banner.jpg" style={{maxHeight: '520px'}}/>
+          <Carousel.Caption>
+            <h3>The Avengers</h3>
+            <p>First Marvel Movie With OG Avengers</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100 h-50" src="/imgs/st-banner.jpg" />
+          <Carousel.Caption>
+            <h3>Stranger Things</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src="/imgs/batman-banner.jpg" />
+          <Carousel.Caption>
+            <h3>The Batman</h3>
+            <p>
+              Best Batman Movie of All Times
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </>
   );
 }
