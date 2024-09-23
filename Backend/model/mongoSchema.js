@@ -1,7 +1,6 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
-const mongoose=require("mongoose")
-mongoose.connect("mongodb+srv://bhalanihet2006:login@login.izxtn.mongodb.net/")
+mongoose.connect("mongodb+srv://bhalanihet2006:login@login.izxtn.mongodb.net/Login?retryWrites=true&w=majority")
 .then(()=>{
     console.log("mongodb connected");
 })
@@ -9,7 +8,7 @@ mongoose.connect("mongodb+srv://bhalanihet2006:login@login.izxtn.mongodb.net/")
     console.log('failed');
 })
 
-const newSchema=new mongoose.Schema({
+const newSchema = mongoose.Schema({
     email:{
         type:String,
         required:true
@@ -19,7 +18,5 @@ const newSchema=new mongoose.Schema({
         required:true
     }
 })
-
-const collection = mongoose.model("collection",newSchema);
-
-module.exports = collection
+const user = mongoose.model('user',newSchema)
+export default user;

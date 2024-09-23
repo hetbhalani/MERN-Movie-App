@@ -8,9 +8,8 @@ function Login() {
 
   async function submit(e) {
     e.preventDefault();
-
     try {
-      await axios.post("http://localhost:3000/", {
+      await axios.post("http://localhost:3690/login", {
         email,
         password
       });
