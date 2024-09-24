@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Home from "./components/Home"
 import Login from "./components/Login"
 import Signup from "./components/Signup"
+import Card from "./components/Card"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Layout';
 
@@ -15,6 +16,7 @@ root.render(
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
             <Route index element={<Home/>}/>
+            <Route path="card" element={<Card />} />
           </Route>
         </Routes>
       </BrowserRouter>
