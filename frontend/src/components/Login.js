@@ -16,11 +16,11 @@ function Login() {
           password,
         })
         .then((res) => {
-          if (res.data == "exist") {
+          if (res.data == "login successful") {
             history("/");
           } else if (res.data == "notexist") {
             alert("User have not sign up");
-            history("/");
+            history("/signup");
           }
         })
         .catch((e) => {

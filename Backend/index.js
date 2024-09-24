@@ -48,7 +48,7 @@ app.post("/signup",async(req,res)=>{
         }
         else{
             await user.insertMany([data]);
-            res.status(201).json("signup successful");
+            res.status(200).json("signup successful");
         }
 
     }
