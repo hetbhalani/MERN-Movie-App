@@ -1,7 +1,22 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 
 function Layout() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    useEffect(() => {
+      const token = localStorage.getItem('token'); 
+      setIsLoggedIn(!!token); 
+    }, []);
+
+    const handleSearchClick = (e) => {
+      if (!isLoggedIn) {
+        e.preventDefault(); 
+        alert('You need to log in to use the search functionality.');
+      }
+    };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -17,8 +32,9 @@ function Layout() {
                 placeholder="Search"
                 aria-label="Search"
                 style={{ width: "700px" }} 
+                onClick={handleSearchClick}
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-success" type="submit" onClick={handleSearchClick}>
                 Search
               </button>
             </form>
@@ -27,7 +43,7 @@ function Layout() {
           <div className="d-flex">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active fs-5" aria-current="page" to="/home">
+                <Link className="nav-link active fs-5" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
