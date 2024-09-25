@@ -12,8 +12,7 @@ function App() {
 
   return (
     <>
-      <Layout onSearchSubmit={handleSearchSubmit} />
-      <SearchResults searchQuery={searchQuery} />
+      <Layout />
     </>
   );
 }

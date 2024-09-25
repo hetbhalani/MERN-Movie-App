@@ -1,21 +1,15 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
-export const SearchContext = createContext();
+const SearchContext = createContext();
 
 export const SearchProvider = ({ children }) => {
-  const [searchValue, setSearchValue] = useState('');
-
-  const handleSearchChange = (e) => {
-    setSearchValue(e.target.value);
-  };
-
-  const handleSearchSubmit = (e) => {
-    console.log(e);
-  };
+  const [searchTerm, setSearchTerm] = useState('batman');
 
   return (
-    <SearchContext.Provider value={{ searchValue, handleSearchChange, handleSearchSubmit }}>
+    <SearchContext.Provider value={{ searchTerm, setSearchTerm }}>
       {children}
     </SearchContext.Provider>
   );
 };
+
+export const useSearch = () => useContext(SearchContext);
