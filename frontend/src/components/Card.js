@@ -30,14 +30,14 @@ export default function Card ()  {
                 <div className="card-body">
                     <h5 className="card-title">{obj.Title}</h5>
                     <p className="card-text">{obj.Year}</p>
-                    <a href="#" className="btn btn-primary">Watch Now</a>
+                    <button className="btn btn-primary">Add to Watchlist</button>
                 </div>
             </div>
         </div>
     ));
 
     return (
-        <div className='container'>
+        <div className='container mt-3'>
             <div className='row'>{finalData.length > 0 ? finalData : <p>No results found.</p>}</div>
         </div>
     );
