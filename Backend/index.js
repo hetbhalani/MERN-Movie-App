@@ -58,6 +58,10 @@ app.post("/signup",async(req,res)=>{
 
 })
 
+app.post('/wishlist',async(req,res)=>{
+    
+})
+
 app.listen(3690,()=>{
     console.log("port connected");
 })
