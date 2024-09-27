@@ -48,7 +48,7 @@ export default function Card() {
         });
         Toast.fire({
           icon: "success",
-          title: "Addwd to Watchlist",
+          title: "Added to Watchlist",
         });
       }
     } catch (error) {
