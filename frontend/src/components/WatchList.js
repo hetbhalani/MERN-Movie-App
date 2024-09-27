@@ -39,7 +39,7 @@ export default function Watchlist() {
               });
               Toast.fire({
                 icon: "warning",
-                title: "Remove from Watchlist"
+                title: "Removed from Watchlist"
               });
         } catch (error) {
             console.log(error);
@@ -57,7 +57,7 @@ export default function Watchlist() {
                             <div className="card-body">
                                 <h5 className="card-title">{movie.Title}</h5>
                                 <p className="card-text">{movie.Year}</p>
-                                <button className="btn btn-outline-success" onClick={() => deleteCard(movie.imdbID)}>Watched</button>
+                                <button className="btn btn-outline-warning" onClick={() => deleteCard(movie.imdbID)}>Watched</button>
                             </div>
                         </div>
                     </div>
