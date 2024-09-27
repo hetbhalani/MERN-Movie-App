@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2'
+
 
 function Signup() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,13 +19,25 @@ function Signup() {
           email,
           password,
         })
-        .then((res) => {
-          if (res.data == "exist") {
-            alert("User already exists");
-            history('/')
-          } else if (res.data == "notexist") {
-            history("/");
-          }
+        .then(() => { 
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            }
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Signed in successfully"
+          });
+          setTimeout(() => {
+            navigate('/'); 
+        }, 2000);
         })
         .catch((e) => {
           alert("wrong details");
@@ -68,7 +82,7 @@ function Signup() {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary w-100">
+        <button type="submit" className="btn btn-primary w-100" navigate='/'>
           Sign Up
         </button>
 

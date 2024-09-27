@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2'
+
 
 function Login() {
   const history = useNavigate();
@@ -17,10 +19,43 @@ function Login() {
         })
         .then((res) => {
           if (res.data == "login successful") {
-            history("/");
+            const Toast = Swal.mixin({
+              toast: true,
+              position: "top-end",
+              showConfirmButton: false,
+              timer: 2000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+              }
+            });
+            Toast.fire({
+              icon: "success",
+              title: "Login successfully"
+            });
+            setTimeout(() => {
+              history('/'); 
+          }, 2000);
           } else if (res.data == "notexist") {
-            alert("User have not sign up");
-            history("/signup");
+            const Toast = Swal.mixin({
+              toast: true,
+              position: "top-end",
+              showConfirmButton: false,
+              timer: 2000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+              }
+            });
+            Toast.fire({
+              icon: "error",
+              title: "User not signed in"
+            });
+            setTimeout(() => {
+              history('/signup'); 
+          }, 2000);
           }
         })
         .catch((e) => {
