@@ -51,7 +51,6 @@ app.post("/signup",async(req,res)=>{
             await user.insertMany([data]);
             res.status(200).json("signup successful");
         }
-
     }
     catch(e){
         res.json("fail")
