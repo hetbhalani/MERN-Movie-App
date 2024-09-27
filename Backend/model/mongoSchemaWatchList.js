@@ -7,7 +7,7 @@ mongoose.connect(process.env.MONGO_URL)
     console.log("mongodb connected");
 })
 .catch(()=>{
-    console.log('failed');
+    console.log('failed1');
 })
 
 
