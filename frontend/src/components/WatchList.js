@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from "react";
 import axios from "axios";
+import Swal from 'sweetalert2'
+
 
 
 export default function Watchlist() {
@@ -23,6 +25,22 @@ export default function Watchlist() {
             const response = await axios.delete(`http://localhost:3690/watchlist/${imdbID}`);
             setWatchlist(watchlist.filter(movie => movie.imdbID !== imdbID));
             //khali eva j movie batave jeni imdbID delete vada imdbID jevi na hoi
+
+            const Toast = Swal.mixin({
+                toast: true,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.onmouseenter = Swal.stopTimer;
+                  toast.onmouseleave = Swal.resumeTimer;
+                }
+              });
+              Toast.fire({
+                icon: "warning",
+                title: "Remove from Watchlist"
+              });
         } catch (error) {
             console.log(error);
         }
