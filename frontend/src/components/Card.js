@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useSearch } from '../SearchContext';
 
-const api_key = process.env.API_KEY;
 export default function Card ()  {
     const { searchTerm } = useSearch();
     const [data, setData] = useState([]);
 
     const fetchData = async () => {
         try {
-            const response = await fetch(api_key + {searchTerm});
+            const response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=14d435fd&s=${searchTerm}`);
             const result = await response.json();
             if (result.Search) {
                 setData(result.Search);
