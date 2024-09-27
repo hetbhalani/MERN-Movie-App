@@ -1,94 +1,10 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import './home.css'
 
 function Home() {
   return (
     <>
-      {/* <div id="carouselExampleIndicators" className="carousel slide">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src="/imgs/batman-banner.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="/imgs/dark-banner.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="/imgs/la-la-land-banner.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="/imgs/st-banner.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div> */}
-
       <Carousel className="mt-3">
         <Carousel.Item>
           <img className="d-block w-100" src="/imgs/dark-banner.jpg" style={{maxHeight: '520px'}}/>
@@ -126,11 +42,11 @@ function Home() {
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col-2 mx-4"><img src='/imgs/batman-card.jpg' style={{maxWidth: '250px'}}/></div>
-          <div className="col-2 mx-4"><img src='/imgs/int-card.jpg' style={{maxWidth: '250px'}}/></div>
-          <div className="col-2 mx-4"><img src='/imgs/ds-card.jpeg' style={{maxWidth: '250px'}}/></div>
-          <div className="col-2 mx-4"><img src='/imgs/br-card.jpg' style={{maxWidth: '250px'}}/></div>
-          <div className="col-2 mx-4"><img src='/imgs/end.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/batman-card.jpg'className="zoom-effect" style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/int-card.jpg'className="zoom-effect" style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/ds-card.jpeg'className="zoom-effect" style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/br-card.jpg' className="zoom-effect"style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/end.jpg'className="zoom-effect" style={{maxWidth: '250px'}}/></div>
         </div>
       </div>
 
@@ -138,11 +54,11 @@ function Home() {
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col-2 mx-4"><img src='/imgs/tb-card.jpg' style={{maxWidth: '250px'}}/></div>
-          <div className="col-2 mx-4"><img src='/imgs/mh-card.jpg' style={{maxWidth: '250px'}}/></div>
-          <div className="col-2 mx-4"><img src='/imgs/bb-card.jpg' style={{maxWidth: '250px'}}/></div>
-          <div className="col-2 mx-4"><img src='/imgs/loki.jpg' style={{maxWidth: '250px'}}/></div>
-          <div className="col-2 mx-4"><img src='/imgs/mn-card.jpg' style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/tb-card.jpg'className="zoom-effect" style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/mh-card.jpg'className="zoom-effect" style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/bb-card.jpg'className="zoom-effect" style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/loki.jpg' className="zoom-effect"style={{maxWidth: '250px'}}/></div>
+          <div className="col-2 mx-4"><img src='/imgs/mn-card.jpg'className="zoom-effect" style={{maxWidth: '250px'}}/></div>
         </div>
       </div>
     </>
