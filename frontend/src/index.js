@@ -21,6 +21,7 @@ root.render(
             <Route path="/signup" element={<Signup/>}/>
             <Route index element={<Home/>}/>
             <Route path="/card" element={<Card />} />
+            {/* <Route path="/watchlist" element={<WatchList />} /> */}
           </Route>
         </Routes>
       </SearchProvider>
