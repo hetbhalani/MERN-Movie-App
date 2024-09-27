@@ -4,6 +4,7 @@ import Home from "./components/Home"
 import Login from "./components/Login"
 import Signup from "./components/Signup"
 import Card from "./components/Card"
+import Watchlist from './components/WatchList';
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import Layout from './Layout';
 import { SearchProvider } from './SearchContext';
@@ -21,7 +22,7 @@ root.render(
             <Route path="/signup" element={<Signup/>}/>
             <Route index element={<Home/>}/>
             <Route path="/card" element={<Card />} />
-            {/* <Route path="/watchlist" element={<WatchList />} /> */}
+            <Route path="/watchlist" element={<Watchlist />} />
           </Route>
         </Routes>
       </SearchProvider>
