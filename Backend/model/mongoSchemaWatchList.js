@@ -10,3 +10,13 @@ mongoose.connect(process.env.MONGO_URL)
     console.log('failed');
 })
 
+
+const watchlistSchema = mongoose.Schema({
+    imdbID: String,
+    Poster: String,
+    Title:String,
+    Year: String
+})
+
+const list = mongoose.model('list',watchlistSchema)
+export default list;
