@@ -14,10 +14,10 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src="/imgs/avg-banner.jpg" style={{maxHeight: '520px'}}/>
+          <img className="d-block w-100" src="/imgs/end-banner.jpg" style={{maxHeight: '520px'}}/>
           <Carousel.Caption>
             <h3>The Avengers</h3>
-            <p>First Marvel Movie With OG Avengers</p>
+            <p>Best Marvel Movie With OG Avengers</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
