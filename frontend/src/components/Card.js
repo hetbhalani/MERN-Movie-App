@@ -56,6 +56,13 @@ export default function Card() {
       alert("Failed to add to watchlist. Please try again.");
     }
   };
+
+  const writeReview = async (movie)=>{
+    const response = await axios.post(
+      "http://localhost:3690/write_review",
+      movie
+    );
+  }
   const finalData = data.map((obj) => (
     <div className="col col-4 mt-3" key={obj.imdbID}>
       <div className="card" style={{ width: "18rem" }}>
@@ -64,11 +71,14 @@ export default function Card() {
           <h5 className="card-title">{obj.Title}</h5>
           <p className="card-text">{obj.Year}</p>
           <button
-            className="btn btn-primary"
+            className="btn btn-outline-primary me-5"
             onClick={() => addToWatchlist(obj)}
           >
-            Add to Watchlist
+            Watchlist +
           </button>
+          <button className="btn btn-outline-primary ms-4" >
+            Review
+          </button >
         </div>
       </div>
     </div>
