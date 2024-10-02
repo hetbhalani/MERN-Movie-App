@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
+import dotenv from 'dotenv'
+dotenv.config();
 
-mongoose.connect("mongodb+srv://bhalanihet2006:login@login.izxtn.mongodb.net/Login?retryWrites=true&w=majority")
+
+mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
     console.log("mongodb connected");
 })
