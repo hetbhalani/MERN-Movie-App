@@ -24,7 +24,7 @@ export default function Watchlist() {
         try {
             const response = await axios.delete(`http://localhost:3690/watchlist/${imdbID}`);
             setWatchlist(watchlist.filter(movie => movie.imdbID !== imdbID));
-            //khali eva j movie batave jeni imdbID delete vada imdbID jevi na hoi
+            //khali eva j movie batave jeni imdbID delete vada imdbID jevi na hoi...
 
             const Toast = Swal.mixin({
                 toast: true,
