@@ -4,10 +4,10 @@ dotenv.config();
 
 mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
-    console.log("mongodb connected");
+    console.log("watch-list db connected");
 })
 .catch(()=>{
-    console.log('failed1');
+    console.log('failed!');
 })
 
 

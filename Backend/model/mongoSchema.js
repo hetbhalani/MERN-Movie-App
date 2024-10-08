@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGO_URL)
     console.log("login db connected");
 })
 .catch(()=>{
-    console.log('failed');
+    console.log('failed!');
 })
 
 const newSchema = mongoose.Schema({
