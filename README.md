@@ -4,18 +4,18 @@ Welcome to the **MERN Movie App**! This application lets you explore movies and 
 
 ## 🖼️ Screenshots
 
-# Home Page
+## Home Page
 ![Movie Search](./frontend/imgs/home.jpg)
 
-# Login & SignUp
+## Login & SignUp
 <div align="center">
   <img src="./frontend/imgs/login.jpg" width="450" height="400"  alt="Movie Poster">
 </div>
 
-# Search Movies & Add to Watchlist
+## Search Movies & Add to Watchlist
 ![Watchlist](./frontend/imgs/search.jpg)
 
-# Watch & Remove Movies you watched
+## Watch & Remove Movies you watched
 ![Watchlist](./frontend/imgs/watchlist.jpg)
 
 
