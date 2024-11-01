@@ -31,7 +31,7 @@ export default function Card() {
   const addToWatchlist = async (movie) => {
     try {
       const response = await axios.post(
-        "http://localhost:3690/watchlist",
+        "https://movie-app-86dv.onrender.com/watchlist",
         movie
       );
       if (response.status === 200) {

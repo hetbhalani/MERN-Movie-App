@@ -13,7 +13,7 @@ export default function Watchlist() {
 
     const fetchWatchlist = async () => {
         try {
-            const response = await axios.get('http://localhost:3690/watchlist');
+            const response = await axios.get('https://movie-app-86dv.onrender.com/watchlist');
             setWatchlist(response.data);
         } catch (error) {
             console.error("Error fetching watchlist:", error);
@@ -22,7 +22,7 @@ export default function Watchlist() {
 
     const deleteCard = async (imdbID) =>{
         try {
-            const response = await axios.delete(`http://localhost:3690/watchlist/${imdbID}`);
+            const response = await axios.delete(`https://movie-app-86dv.onrender.com/${imdbID}`);
             setWatchlist(watchlist.filter(movie => movie.imdbID !== imdbID));
             //khali eva j movie batave jeni imdbID delete vada imdbID jevi na hoi...
 

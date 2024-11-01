@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
     try {
       await axios
-        .post("http://localhost:3690/login", {
+        .post("https://movie-app-86dv.onrender.com/login", {
           email,
           password,
         })

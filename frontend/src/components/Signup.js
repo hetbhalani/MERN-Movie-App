@@ -15,7 +15,7 @@ function Signup() {
 
     try {
       await axios
-        .post("http://localhost:3690/signup", {
+        .post("https://movie-app-86dv.onrender.com/signup", {
           email,
           password,
         })
