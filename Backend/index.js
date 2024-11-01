@@ -2,6 +2,8 @@ import express from 'express';
 import cors from 'cors'
 import user from './model/mongoSchema.js';
 import list from './model/mongoSchemaWatchList.js'
+import dotenv from 'dotenv'
+dotenv.config();
 
 const app = express();
 
@@ -92,6 +94,6 @@ app.delete('/watchlist/:id', async(req,res)=>{
     }
 })
 
-app.listen(3690,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("port connected");
 })
