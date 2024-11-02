@@ -37,10 +37,7 @@ function Layout() {
           <Link to="/" className="navbar-brand">
             <img src="/imgs/logo.jpg" style={{ width: "100px" }} alt="Logo" />
           </Link>
-          <div
-            className="collapse navbar-collapse "
-            id="navbarNav"
-          >
+          <div className="collapse navbar-collapse d-flex justify-content-left align-items-left" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link
@@ -78,16 +75,15 @@ function Layout() {
 
           <div className="d-flex flex-grow-1 justify-content-center align-items-center">
             <form
-              style={{ width: "900px" }}
-              className="d-flex flex-grow-1 mx-2"
+              className="d-flex flex-grow-1"
+              style={{ maxWidth: "100%" }}
               role="search"
               onSubmit={handleSubmit}
             >
-              <input
-                className="form-control me-1"
+               <input
+                className="flex-1 min-w-0 px-4 py-2 text-center form-control"
                 type="search"
                 placeholder="Search For Movies/Series"
-                aria-label="Search"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
