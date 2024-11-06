@@ -52,19 +52,19 @@ function Home() {
 
       <div className="container-fluid">
         <div className="row g-3">
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/batman-card.jpg" className="img-fluid zoom-effect" alt="Batman" />
           </div>
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/int-card.jpg" className="img-fluid zoom-effect" alt="Inception" />
           </div>
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/ds-card.jpeg" className="img-fluid zoom-effect" alt="Dr Strange" />
           </div>
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/br-card.jpg" className="img-fluid zoom-effect" alt="Blade Runner" />
           </div>
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/end.jpg" className="img-fluid zoom-effect" alt="Endgame" />
           </div>
         </div>
@@ -76,19 +76,19 @@ function Home() {
 
       <div className="container-fluid">
         <div className="row g-3">
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/tb-card.jpg" className="img-fluid zoom-effect" alt="The Boys" />
           </div>
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/mh-card.jpg" className="img-fluid zoom-effect" alt="Mindhunter" />
           </div>
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/bb-card.jpg" className="img-fluid zoom-effect" alt="Breaking Bad" />
           </div>
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/loki.jpg" className="img-fluid zoom-effect" alt="Loki" />
           </div>
-          <div className="col-6 col-md-4 col-lg-2">
+          <div className="col-2 m-4 col-md-4 col-lg-2">
             <img src="/imgs/mn-card.jpg" className="img-fluid zoom-effect" alt="Moon Knight" />
           </div>
         </div>
